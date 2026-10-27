@@ -1,0 +1,112 @@
+/* Burgundy, black, and white theme. The original photos are not edited. */
+body {
+  margin: 0;
+  background: #100d0f;
+  color: #f5f1f2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.page { width: 90%; max-width: 1040px; margin: 28px auto; }
+.hero, .subpage-hero {
+  display: flex; align-items: center; justify-content: space-between; gap: 30px;
+  padding: 48px; background: linear-gradient(125deg, #160f12, #5b1729 68%, #7a2338);
+  border: 1px solid #7a3448; border-radius: 18px 18px 0 0;
+}
+.hero-copy { max-width: 650px; }
+.eyebrow, .section-label {
+  margin: 0 0 8px; color: #e5a7b8; font-size: .76em; font-weight: bold; letter-spacing: 2px;
+}
+h1 { margin: 5px 0 8px; color: #fff; font-size: 2.8em; line-height: 1.2; }
+.name-accent { color: #f0bdca; }
+.hero-subtitle { margin: 8px 0; color: #f3dce2; font-size: 1.1em; }
+.hero-intro { max-width: 500px; color: #e1d3d7; }
+.hero-links { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; margin-top: 22px; }
+.button-link {
+  display: inline-block; padding: 10px 17px; color: #fff; background: #7a2338;
+  border: 1px solid #d99aaa; border-radius: 7px; font-weight: bold; text-decoration: none;
+  transition: transform .2s ease, background .2s ease;
+}
+.button-link:hover, .button-link:focus { background: #a63b56; transform: translateY(-2px); }
+.text-link { color: #fff; text-decoration: none; }
+.text-link:hover, .text-link:focus { color: #f0bdca; }
+.profile-frame {
+  flex: 0 0 220px; padding: 10px; text-align: center; color: #eee4e7;
+  background: rgba(10, 7, 8, .6); border: 1px solid #7a3448; border-radius: 16px;
+}
+.profile-frame img {
+  display: block; width: 220px; height: 220px; max-width: 100%;
+  border-radius: 12px; object-fit: cover;
+}
+.profile-frame p { margin: 7px 0 0; font-size: .85em; }
+.subpage-hero { display: block; padding: 42px; }
+.navigation {
+  display: flex; flex-wrap: wrap; gap: 5px; padding: 12px 18px;
+  background: #1b1115; border: 1px solid #48202d; border-top: 0;
+}
+.navigation a {
+  padding: 7px 12px; color: #f2e9ec; text-decoration: none; border-radius: 6px;
+  transition: background .2s ease, color .2s ease;
+}
+.navigation a:hover, .navigation a:focus, .navigation a.active { color: #fff; background: #7a2338; }
+.panel {
+  margin: 20px 0; padding: 27px; background: #191416; border: 1px solid #48202d;
+  border-radius: 13px; box-shadow: 0 8px 24px rgba(0,0,0,.2); animation: appear .5s ease both;
+}
+h2 { margin: 0 0 12px; color: #fff; font-size: 1.55em; }
+h3 { margin: 8px 0; color: #f5dce3; }
+p { margin-top: 8px; }
+strong { color: #fff; }
+.muted, .small-note { color: #c4b3b8; }
+.table-wrap { width: 100%; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; border: 1px solid #69404b; }
+th, td { padding: 12px; border: 1px solid #69404b; text-align: left; vertical-align: top; }
+th { color: #fff; background: #642036; }
+tr:nth-child(even) { background: #24181c; }
+tr:hover { background: #3a2029; }
+.interest-grid { display: flex; flex-wrap: wrap; gap: 14px; }
+.interest-card {
+  flex: 1 1 180px; padding: 18px; background: #21171a; border: 1px solid #56303b;
+  border-radius: 10px; transition: transform .2s ease, border-color .2s ease;
+}
+.interest-card:hover { transform: translateY(-4px); border-color: #d99aaa; }
+.interest-icon { font-size: 1.8em; }
+.interest-card p { margin-bottom: 0; color: #d0c0c5; font-size: .94em; }
+.quote-panel {
+  margin: 20px 0; padding: 30px; background: linear-gradient(120deg, #3b1723, #171114);
+  border: 1px solid #7a3448; border-radius: 13px;
+}
+blockquote { margin: 12px 0; color: #fff; font-weight: bold; }
+.quote-note { color: #d0c0c5; font-size: .93em; }
+.link-list li, ol li { margin: 7px 0; }
+.hobby-image {
+  display: block; width: 100%; max-width: 640px; height: auto; margin: 18px auto 0;
+  border: 1px solid #69404b; border-radius: 10px;
+}
+.hobby-detail { border-left: 3px solid #a63b56; }
+a { color: #f0bdca; }
+a:hover, a:focus { color: #fff; }
+.footer {
+  margin-top: 25px; padding: 22px; color: #c4b3b8; background: #0b090a;
+  border: 1px solid #48202d; border-radius: 12px; overflow-wrap: anywhere; font-size: .85em;
+}
+.footer p { margin: 5px 0; }
+.footer-name { color: #fff; font-weight: bold; font-size: 1.1em; }
+.footer-name span { color: #e5a7b8; }
+@keyframes appear { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 720px) {
+  .page { width: 94%; margin: 12px auto; }
+  .hero { display: block; padding: 27px 22px; }
+  .subpage-hero { padding: 28px 22px; }
+  h1 { font-size: 2.1em; }
+  .profile-frame { width: 220px; max-width: calc(100% - 20px); margin-top: 25px; }
+  .panel { padding: 19px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .panel { animation: none; }
+  .button-link, .navigation a, .interest-card { transition: none; }
+}
+.cricket-photo {
+  display: block; width: 100%; max-width: 620px; max-height: 520px; object-fit: cover;
+  object-position: center 55%; margin: 18px auto 8px; border: 1px solid #69404b; border-radius: 12px;
+}
